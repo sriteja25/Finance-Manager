@@ -58,6 +58,8 @@ PODS:
   - GoogleSymbolUtilities (1.1.2)
   - GoogleUtilities (1.3.2):
     - GoogleSymbolUtilities (~> 1.1)
+  - ImagePicker (2.0.0)
+  - SideMenu (2.0.7)
   - SwiftyJSON (3.0.0)
   - TesseractOCRiOS (4.0.0)
 
@@ -70,6 +72,8 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - GoogleSignIn
+  - ImagePicker
+  - SideMenu
   - SwiftyJSON (= 3.0.0)
   - TesseractOCRiOS (= 4.0.0)
 
@@ -93,9 +97,11 @@ SPEC CHECKSUMS:
   GoogleSignIn: 09036ed61f8e75f1424100d63f7719480b2428c3
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
+  ImagePicker: 81175d36c2852cb543cb4f5d6c19e28f3e8d90eb
+  SideMenu: c5d3c3bc855b96bc2059e0b1ec346ecb54e80447
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
   TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
 
-PODFILE CHECKSUM: 4deceff38a2d212d5cc57834d328034ff1de06cf
+PODFILE CHECKSUM: 02d60953b6b1258a3900ff11b409293b15be5ef5
 
 COCOAPODS: 1.0.1

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "15809FDC7F08D709057B3BCE347C2A02"
+               BlueprintIdentifier = "8936459FFEEBEBC3EA79584A8C1F1384"
                BuildableName = "TesseractOCR.framework"
                BlueprintName = "TesseractOCRiOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15809FDC7F08D709057B3BCE347C2A02"
+            BlueprintIdentifier = "8936459FFEEBEBC3EA79584A8C1F1384"
             BuildableName = "TesseractOCR.framework"
             BlueprintName = "TesseractOCRiOS"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -8,34 +8,32 @@
 
 import UIKit
 import TesseractOCR
+import SideMenu
 
 
 
 
-
-
-
-class TestingViewController: UIViewController,G8TesseractDelegate {
-
+class TestingViewController: UIViewController {
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.hideKeyboardWhenTappedAround()
         
-        if let tesseract = G8Tesseract(language: "eng") {
-            tesseract.delegate = self
-            tesseract.image = UIImage(named: "bill2.png")?.g8_blackAndWhite()
-            tesseract.recognize()
-            
-            let str:String = tesseract.recognizedText
-            
-        }
-                }
+    }
+
+
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
     
 
 

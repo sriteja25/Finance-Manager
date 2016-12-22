@@ -9,22 +9,29 @@
 import UIKit
 import Foundation
 import TesseractOCR
+import ImagePicker
+
 
 
     
 
 
-class ImageToTextViewController: UIViewController,G8TesseractDelegate {
+class ImageToTextViewController: UIViewController,G8TesseractDelegate,ImagePickerDelegate {
+    
+    let imagePickerController = ImagePickerController()
     
    
     
+    @IBOutlet weak var billImageView: UIImageView!
     
-   
     
     @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         
         self.hideKeyboardWhenTappedAround()
 
@@ -110,96 +117,53 @@ class ImageToTextViewController: UIViewController,G8TesseractDelegate {
             
         
         }
-            
-            
-        
-            
-
-
-
-
-    
-            
-
-
- 
-        
-        
-        
-        
-        
         
     func progressImageRecognition(for tesseract: G8Tesseract!) {
         
         print("Recognition Progress \(tesseract.progress) %")
         
         }
-        
 }
- 
-    @IBOutlet weak var clickedButton: UIButton!
-
-    @IBAction func buttonPressed(_ sender: AnyObject) {
-        
-    /*
-       // keyString = textView.text
-        
-        let keyWord =  textView.text.range(of:"Pay")
-        
-        let wordUpperBound = keyWord?.upperBound
-        
-        let remainingString = textView.text.substring(from: wordUpperBound!)
-        
-        let StringArr = remainingString.characters.split{$0 == " "}.map(String.init)
-        
-        
-        var CurrentNum = [Float]()
-         
-        var num  = [Float]()
-        
-        var currentNumber :Float = 0
+    
+    
+    @IBAction func uploadButton(_ sender: AnyObject) {
         
         
         
-        print("Teja2 \(StringArr.count)")
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+        imagePickerController.imageLimit = 1
+       
         
-        for var i in 0..<StringArr.count{
-            
-            print("abcdef \(StringArr[i])")
-            
-            num = [Float(StringArr[i])!]
-            
-            print(num)
-            
-            if num != nil {
-                
-                print("Teja \(num)")
-                
-                CurrentNum = num
-                
-                if(CurrentNum[0] > CurrentNum[1]){
-                    
-                    CurrentNum[1] = CurrentNum[0]
-                    
-                    
-                    
-                }
-                
-                
-                
-            }
-            else {
-                print("Not Valid Integer")
-            }
-        }
         
-        print("Kichu \(CurrentNum[1])")
         
-       */
+    }
+    
+    func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]){
         
+        imagePickerController.imageLimit = 1
     
     
     }
+    func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]){
+    
+        imagePicker.dismiss(animated: true, completion: nil)
+        
+        imagePickerController.imageLimit = 1
+        
+        billImageView.image = images[0]
+        
+    }
+    func cancelButtonDidPress(_ imagePicker: ImagePickerController){
+    
+        imagePicker.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
+    
+ 
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

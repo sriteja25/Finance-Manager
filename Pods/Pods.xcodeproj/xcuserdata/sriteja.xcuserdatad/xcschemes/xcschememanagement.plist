@@ -29,7 +29,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ImagePicker-ImagePicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImagePicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Finance Manager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SideMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,12 +62,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>15809FDC7F08D709057B3BCE347C2A02</key>
+		<key>09A62655F66AE53A474D64E42E6E9DF9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>27C9159E32FB4492DC2FE66D4C0AAA62</key>
+		<key>3BFF9F651824EF6D7159B996DAA71D25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +82,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A620A14495ACD40EAE9A973F7F8CE673</key>
+		<key>8936459FFEEBEBC3EA79584A8C1F1384</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DCFEBC10D4229D2932ECF5A642D8CE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>BC5000D645EEAF961C85907CDC796FE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA710E15F4892577828090AC82D0409B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -83,6 +108,11 @@
 			<true/>
 		</dict>
 		<key>EE774F234E810C0DD8263855D7A1A166</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA21929B32B23A2AFF716C3D2422002C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -89,6 +89,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Eureka/Eureka.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKCoreKit/FBSDKCoreKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKLoginKit/FBSDKLoginKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ImagePicker/ImagePicker.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SideMenu/SideMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TesseractOCRiOS/TesseractOCR.framework"
 fi
@@ -98,6 +100,8 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Eureka/Eureka.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKCoreKit/FBSDKCoreKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKLoginKit/FBSDKLoginKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ImagePicker/ImagePicker.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SideMenu/SideMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TesseractOCRiOS/TesseractOCR.framework"
 fi

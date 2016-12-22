@@ -58,6 +58,8 @@
 	<true/>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>{human-readable reason for photo access}</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Used to scan bills and get convert into text to get some relevant strings.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
